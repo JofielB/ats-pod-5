@@ -21,23 +21,23 @@ Desarrollar mi primer proyecto con Angular fue una experiencia enriquecedora que
 #### Node 18
 1. Installs fnm (Fast Node Manager):
 ```bash
- winget install Schniz.fnm
+winget install Schniz.fnm
 ```
 2. Configure fnm environment:
 ```bash
- fnm env --use-on-cd | Out-String | Invoke-Expression
+fnm env --use-on-cd | Out-String | Invoke-Expression
  ```
 3. Download and install Node.js:
 ```bash
- fnm use --install-if-missing 18
+fnm use --install-if-missing 18
  ```
 4. Verifies the right Node.js version is in the environment(should print `v18.20.4`):
 ```bash
- node -v
+node -v
  ```
 5. Verifies the right npm version is in the environment(should print `10.7.0`):
 ```bash
- npm -v
+npm -v
  ```
 #### Angular CLI
 1. Installs Angular CLI:
@@ -47,14 +47,18 @@ Desarrollar mi primer proyecto con Angular fue una experiencia enriquecedora que
 ### Pasos para ejecucion
 1. Clonar proyecto:
 ```bash
- git clone https://github.com/JofielB/ats-pod-5.git
+git clone https://github.com/JofielB/ats-pod-5.git
 ```
-2. Instalar dependencias:
+2. Moverse al directorio del proyecto:
 ```bash
- npm install
+cd ats-pod-5
 ```
-3. Levantar proyecto:
+3. Instalar dependencias:
 ```bash
- ng serve --open
+npm install
+```
+4. Levantar proyecto:
+```bash
+ng serve --open
 ```
 
