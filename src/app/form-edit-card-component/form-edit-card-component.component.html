@@ -1,0 +1,45 @@
+<div class="dialogCointainer">
+    <h1>Edit a Card</h1>
+  
+    <form action="" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput placeholder="Title" type="text" formControlName="title" />
+        </mat-form-field>
+      </p>
+  
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Comment</mat-label>
+          <input matInput placeholder="Comment" type="text" formControlName="comment" />
+        </mat-form-field>
+      </p>
+      
+      <p>
+        <mat-form-field>
+          <mat-label>Category</mat-label>
+          <mat-select type="text" formControlName="category">
+            <mat-option value="Food">Food</mat-option>
+            <mat-option value="Games">Games</mat-option>
+            <mat-option value="Sports">Sports</mat-option>
+            <mat-option value="Technology">Technology</mat-option>
+            <mat-option value="Movies">Movies</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+  
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>URL of the image</mat-label>
+          <input matInput placeholder="URL of the image" type="text" formControlName="url" />
+          <mat-icon matSuffix>link</mat-icon>
+        </mat-form-field>
+      </p>
+      <div class="btnContainer">
+        <button type="button" class="btn btn-light" (click)="onNoClick()">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+</div>
+  

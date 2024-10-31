@@ -1,0 +1,12 @@
+<div class="listing" style="background-image: url({{card.photo}});">
+
+    <div class="contenedor" (click) ="openDialog()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" class="classIcon" fontIcon="edit" ></mat-icon>
+    </div>
+    <div class="text-container">
+        <h2 class="listing-title">{{ card.title }}</h2>
+        <p class="listing-comment">{{ card.comment }}</p>
+        <h6 class="listing-description">{{ card.description }}</h6>
+        <p class="listing-type">{{ card.type }}</p>
+    </div>
+</div>
